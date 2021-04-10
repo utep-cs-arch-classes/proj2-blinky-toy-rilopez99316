@@ -44,9 +44,9 @@ void dimmer(){
 
 void state_advance()		/* alternate between toggling red & green */
 {
-  if (){state = 1;}
-  else if (){state = 2;}
-  else if (){state = 3;}
-  else if (){state = 0;} // resets cycle
+  if (button1_down){state = 1;}
+  else if (buton2_down){state = 2;}
+  else if (button3_down){state = 3;}
+  else if (button4_down){state = 0;} // resets cycle
   
 }
