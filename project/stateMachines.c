@@ -30,6 +30,16 @@ void dimmer(){
     nGreen = 1;
     break;
   }
+
+  if (nRed != red_on){
+    red_on = nRed;
+    led_changed = 1;
+  }
+
+  if (nGreen != green_on){
+    green_on = nGreen;
+    led_changed = 1;
+  }
 }
 
 void state_advance()		/* alternate between toggling red & green */
