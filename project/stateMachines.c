@@ -1,6 +1,7 @@
 #include <msp430.h>
 #include "stateMachines.h"
 #include "led.h"
+#include "buttons.h"
 
 static char state = 0;
 static char nRed, nGreen, level; // level represents what type of brightnes we are currently at.
