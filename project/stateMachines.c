@@ -44,14 +44,9 @@ void dimmer(){
 
 void state_advance()		/* alternate between toggling red & green */
 {
-  char changed = 0;  
-
-  static enum {R=0, G=1} color = G;
-  switch (color) {
-  case R: changed = toggle_red(); color = G; break;
-  case G: changed = toggle_green(); color = R; break;
-  }
-
-  led_changed = changed;
-  led_update();
+  if (){state = 1;}
+  else if (){state = 2;}
+  else if (){state = 3;}
+  else if (){state = 0;} // resets cycle
+  
 }
