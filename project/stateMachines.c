@@ -14,12 +14,20 @@ void dimmer(){
 
   switch(state){ // each case represent a state. case 0 = state 0...
   case 0:
+    nRed = 0;
+    nGreen = 0;
     break;
   case 1:
+    nRed = 1;
+    nGreen = 0;
     break;
   case 2:
+    nRed = 0;
+    nGreen = 1;
     break;
   case 3:
+    nRed = 1;
+    nGreen = 1;
     break;
   }
 }
