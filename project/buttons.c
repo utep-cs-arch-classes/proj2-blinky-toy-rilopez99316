@@ -16,3 +16,10 @@ void buttons_init(){
   led_update();
 }
 
+static char button_upd_Interrupt_hndrl(){
+  char P2VAL = P2IN;
+
+  P2IES |= (P2VAL & BUTTONS);
+  P2IES &= (P2VAL | ~BUTTONS);
+  return P2VAL;
+}
