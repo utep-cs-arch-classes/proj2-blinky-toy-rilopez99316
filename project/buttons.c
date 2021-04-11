@@ -31,5 +31,10 @@ void button_interrupt_hndlr(){
   button2_down = (P2VAL & button2) ? 0 : 1;
   button3_down = (P2VAL & button3) ? 0 : 1;
   button4_down = (P2VAL & button4) ? 0 : 1;
+
+  button1_upd = 1;
+  button2_upd = 1;
+  button3_upd = 1;
+  button4_upd = 1;
   led_update();
 }
