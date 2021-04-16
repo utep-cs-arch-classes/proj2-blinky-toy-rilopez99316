@@ -7,6 +7,11 @@ char button2_down;
 char button3_down;
 char button4_down;
 
+char button1_upd;
+char button2_upd;
+char button3_upd;
+char button4_upd;
+
 void buttons_init(){
   P2REN |= BUTTONS;
   P2IE |= BUTTONS;
